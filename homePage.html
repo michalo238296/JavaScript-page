@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New page with JS elements, KJM</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="javascript.js"></script>
+	<style>
+		div {
+			width: 1200px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		
+		.intro p {
+			margin: 30px 50px 80px;
+		}
+	</style>
+</head>
+<body onload="displayDate()">
+	<nav>
+		<ul>
+			<li><a href="homePage.html">Main</a></li>
+			<li><a href="history.html">History</a></li>
+			<li><a href="polishClubs.html">Clubs</a></li>
+			<li><a href="polishPlayers.html">Players</a></li>
+			<li><a href="polishCoaches.html">Coaches</a></li>
+			<li><a href="myTeam.html">My Team</a></li>
+		</ul>
+	</nav>
+	<span id="date" style="float: right"></span>
+	<h1>Poland national football team</h1>
+	<div class="intro">
+		<h3>Quick summary...</h3>
+		<p>The Poland national football team represents Poland in association football and is controlled by the Polish Football Association, 
+			the governing body for football in Poland. At the FIFA World Cup, the current best result for Poland are two bronze medals won in 1974 and 1982, 
+			with this era being regarded as the "Golden Era" of Polish international association football. At the Euros, Poland's best current result 
+			is reaching the quarter-finals in 2016, in Poland's third consecutive appearance at the competition. Poland's debut at the Euros was in 2008. 
+			They were co-hosts of the 2012 edition, along with Ukraine. Overall, Poland's best ever result in international football tournaments 
+			as a whole was the gold medal won at the 1972 Munich Olympics, along with winning the silver medal on two occasions; 
+			at the 1976 Montreal Olympics and at the 1992 Barcelona Olympics.
+		</p>
+		<span id="picDesc" style="float: right; font-size: 40px; margin-top: 20px; margin-bottom: 20px">Polish National Team</span>
+		<span id="inputCont" style="float: right; clear: right">
+			<input class="input" type="text" placeholder="You can change the title of this photo..." style="width: 300px; height: 25px">
+			<button onclick="document.getElementById('picDesc').innerHTML = 
+				changeTitle(document.getElementsByClassName('input')[0].value)" 
+				style="height: 25px;">Change</button>
+		</span>
+		<img src="polishTeam.jpg" alt="Polish Team" width="800" height="600" style="text-align: center;">
+	</div>
+	<div class="own_content">
+		<h4>Here you can put your own content!</h4>
+		<button onclick="addContent(document.getElementsByClassName('own_p')[0])">Add content</button>
+		<p class="own_p"></p>
+	</div>
+</body>
+</html>

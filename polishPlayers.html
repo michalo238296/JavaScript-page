@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Polish Players</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="javascript.js"></script>
+	<style>
+		.players {
+			width: 900px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		div {
+			overflow: auto;
+		}
+		img {
+			margin: 0px 10px;
+		}
+	</style>
+</head>
+<body onload="displayDate()">
+	<nav>
+		<ul>
+			<li><a href="homePage.html">Main</a></li>
+			<li><a href="history.html">History</a></li>
+			<li><a href="polishClubs.html">Clubs</a></li>
+			<li><a href="polishPlayers.html">Players</a></li>
+			<li><a href="polishCoaches.html">Coaches</a></li>
+			<li><a href="myTeam.html">My Team</a></li>
+		</ul>
+	</nav>
+	<span id="date" style="float: right"></span>
+	<h1>Polish Players</h1>
+	<div class="players">
+		<div class="Lewy">
+			<h3>Robert Lewandowski</h3>
+			<p class="player"><img src="Lewy.jpg" onmouseover="changeText(document.getElementsByClassName('input')[0].value,
+				document.getElementsByClassName('player'), 'Lewandowski is the best player in the World!')" 
+				alt="Lewandowski" height="250" width="200" style="float: left">Robert Lewandowski 
+				(born 21 August 1988) is a Polish professional footballer who plays as a striker for Bayern Munich and is the captain of the Poland national team. 
+				After being the top scorer in the third and second tiers of Polish football with Znicz Pruszków, he moved to top-flight Lech Poznań, 
+				and was the top scorer in the league as they won the 2009–10 Ekstraklasa. In 2010, he transferred to Borussia Dortmund for a reported €4.5 million, 
+				where he won honours including two consecutive Bundesliga titles and a season as the league's top goalscorer. In 2013, 
+				he earned with Borussia a spot in the 2013 UEFA Champions League Final, a tournament in which he was the second top goalscorer, 
+				behind only Cristiano Ronaldo.
+			</p>
+		</div>
+		<div class="Błaszczu">
+			<h3>Jakub Błaszczykowski</h3>
+			<p class="player"><img src="Kuba.jpg" alt="Błaszczykowski" height="250" width="200" style="float: right">Jakub "Kuba" Błaszczykowski 
+				(born 14 December 1985) is a Polish professional footballer who plays as a winger for German club VfL Wolfsburg and the Poland national team. 
+				He started his professional football at Wisła Kraków establishing himself at a young age. In 2007, he joined Borussia Dortmund, 
+				where he spent the majority of his career, making over 250 appearances and winning two Bundesliga titles, two DFL-Supercups, and one DFB-Pokal.
+				Błaszczykowski was twice named Polish Footballer of the Year in 2008 and 2010. With 104 appearances, he is the most capped player for Poland, 
+				and captained them as they co-hosted UEFA Euro 2012, while also appearing at UEFA Euro 2016 and the 2018 FIFA World Cup.
+			</p>
+		</div>
+		<div class="Piszczu">
+			<h3>Łukasz Piszczek</h3>
+			<p class="player"><img src="Piszczu.jpg" alt="Piszczek" height="250" width="200" style="float: left">Łukasz Piotr Piszczek (born 3 June 1985) 
+				is a Polish footballer who plays as a right-back for Borussia Dortmund. He also played for the Poland national team, making his debut in 2007 
+				and going on to receive over 60 caps. He was also selected for four tournaments during his time with the national team, playing in three 
+				UEFA European Championships and the 2018 FIFA World Cup. He confirmed his retirement from international football in 2018 following 
+				the conclusion of the FIFA World Cup.
+			</p>
+		</div>
+		<div id="pass" style="margin: 10px 30px;">
+			<input class="input" type="password" placeholder="Password...">
+		</div>
+	</div>
+</body>
+</html>

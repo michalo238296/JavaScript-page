@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Polish Clubs</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="javascript.js"></script>
+	<style>
+		table {
+			border-collapse: collapse;
+			text-align: center;
+			width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: white;
+		}
+		
+		th, td {
+			border: 5px solid black;
+			padding: 10px 20px;
+			font-size: 20px;
+			
+		}
+	</style>
+</head>
+<body onload="displayDate()">
+	<nav>
+		<ul>
+			<li><a href="homePage.html">Main</a></li>
+			<li><a href="history.html">History</a></li>
+			<li><a href="polishClubs.html">Clubs</a></li>
+			<li><a href="polishPlayers.html">Players</a></li>
+			<li><a href="polishCoaches.html">Coaches</a></li>
+			<li><a href="myTeam.html">My Team</a></li>
+		</ul>
+	</nav>
+	<span id="date" style="float: right"></span>
+	<h1>Polish Clubs</h1>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Club</th>
+				<th>City</th>
+				<th>No. of championships</th>
+				<th>No. of cups</th>
+				<th>Best goal scorer</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Legia</td>
+				<td>Warszawa</td>
+				<td>15</td>
+				<td>8</td>
+				<td>Deyna</td>
+			</tr>
+			<tr>
+				<td>Śląsk</td>
+				<td>Wrocław</td>
+				<td>3</td>
+				<td>6</td>
+				<td>Pawłowski</td>
+			</tr>
+			<tr>
+				<td>Górnik</td>
+				<td>Zabrze</td>
+				<td>19</td>
+				<td>11</td>
+				<td>Pohl</td>
+			</tr>
+			<tr>
+				<td>Wisła</td>
+				<td>Kraków</td>
+				<td>11</td>
+				<td>5</td>
+				<td>Lato</td>
+			</tr>
+			<tr>
+				<td>Widzew</td>
+				<td>Łódź</td>
+				<td>12</td>
+				<td>11</td>
+				<td>Boniek</td>
+			</tr>
+		</tbody>
+	</table>
+	<div style="width:1200px; margin-left: auto; margin-right: auto; text-align: center">
+		<p>You can change the headers of this table!</p>
+		<input class="input" type="text" placeholder="Headers names (use coma to separate headers)..." style="width: 350px">
+		<button onclick="changeHeaders('table', document.getElementsByClassName('input')[0].value)">Change</button>
+	</div>
+</body>
+</html>

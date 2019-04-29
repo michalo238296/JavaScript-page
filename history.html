@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hisotry</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="javascript.js"></script>
+	<style>
+		.history_container {
+			width: 1200px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		div > p{
+			width: 1100px;
+			margin-left: auto;
+			margin-right: auto;
+			
+		}
+		
+		.input_his {
+			width: 300px;
+			height: 25px;
+		}
+	</style>
+</head>
+<body onload="displayDate()">
+	<nav>
+		<ul>
+			<li><a href="homePage.html">Main</a></li>
+			<li><a href="history.html">History</a></li>
+			<li><a href="polishClubs.html">Clubs</a></li>
+			<li><a href="polishPlayers.html">Players</a></li>
+			<li><a href="polishCoaches.html">Coaches</a></li>
+			<li><a href="myTeam.html">My Team</a></li>
+		</ul>
+	</nav>
+	<span id="date" style="float: right"></span>
+	<h1>History</h1>
+	<div class="history_container">
+		<div class="his_sub1">
+			<h3>1946–1974: Beginnings</h3>
+			<p>On 11 June 1946, following the aftermath of World War II, Poland played their first international friendly match, against Norway in Oslo, 
+				a 3–1 defeat. The biggest success in the early years after the war was the victory against one of Europe's best at the time, Czechoslovakia. 
+				Poland defeated their southern neighbors 3–1. Poland suffered the worst defeat in the team's history on 26 April 1948 with a 0–8 loss to 
+				the Danish side. Poland would later erase that memory as they posted their second highest ever victory in Szczecin when they took down Norway 9–0 
+				on 4 September 1963. The game marked the debut for Włodzimierz Lubański. He scored one of the goals in the game. Lubański became the all-time 
+				top scorer for Poland while playing from 1963 to 1980 scoring 48 goals in 75 appearances. This victory was surpassed on 1 April 2009 in Kielce 
+				when Poland defeated San Marino 10–0.
+			</p>
+		</div>
+		<div class="his_sub2">
+			<h3>1974–1986: "Golden Era"</h3>
+			<p>Poland being mostly unknown on the international football scene before 1974 shook up the football world during the World Cup in Germany. 
+				However, this was no huge surprise as the core of the team successfully achieved a gold medal place in the Munich Olympics in 1972. 
+				The Olympics were not considered a major tournament by most Western nations, but Eastern European countries bypassed the amateur rules by fielding 
+				their full national teams, as most players also had employment with national industries or within the army. With their lightning speed 
+				and incredible team chemistry they were almost unstoppable. In qualifying they surprised everyone by eliminating England, quarter-finalists in 1970 
+				and Champions in 1966.
+			</p>
+		</div>
+		<div class="his_sub3">
+			<h3>1986–2001: Decline</h3>
+			<p>After the "Golden Era" from the 1970s and 1980s, Poland suffered a severe drought in international football; they didn't qualify for three 
+				consecutive editions of the FIFA World Cup, failing to qualify in 1990, 1994 and 1998. In 1990 World Cup qualifying, Poland finished 3rd 
+				in the qualifying group, behind Sweden and England, on 5 points with two wins, one draw and three defeats. They began qualifying for 
+				the 1990 edition with a 1–0 win over Albania, before defeats to Sweden (2–1) and England (3–0). Poland then drew 0–0 with England, lost to 
+				Sweden 0–2 and beat Albania 2–1 in their final game, but were 4 points behind England; thus failing to qualify.
+			</p>
+		</div>
+		<div class="his_sub_own">
+			<h3>2016–present: "New Era"</h3>
+			<div>
+				<p id="own_par">Here You can help us with creating this subpage!<br>Just type your proposition of sentences in the fields below!</p>
+			</div>
+			<span id="own_history">
+				<input class="input_his" type="text" placeholder="First sentence...">	
+				<input class="input_his" type="text" placeholder="Second sentence...">
+				<input class="input_his" type="text" placeholder="Third sentence...">
+				<button onclick="document.getElementById('own_par').innerHTML = newParagraph(document.getElementsByClassName('input_his'))"
+					style="width: 250px; height: 25px">Submit</button>
+			</span>
+		</div>
+	</div>
+</body>
+</html>
